@@ -18,7 +18,7 @@ export default function Card(props) {
   const [loading, setLoading] = useState(true);
   
   useEffect(() => {
-    if (loading == false) return ; 
+    if (loading === false) return ; 
     fetch('https://randomuser.me/api/')
       .then((response) => response.json())
       .then((data) => {
@@ -33,7 +33,7 @@ export default function Card(props) {
       });
 
     setLoading(false);
-  }, []);
+  }, [loading]);
 
   const showName = () => {
     setSubtitle("My name is");
