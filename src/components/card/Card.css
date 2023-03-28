@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 450px;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: -100px;
+}
+
+.container {
+    width: 300px;
+}
+
+.card-header {
+    background-color: #e4e4e4;
+    width: 100%;
+    height: 160px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.card-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding: 8px;
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.card-separator {
+    border: 1px solid #ccc;
+    width: 100%;
+    position: absolute
+}
+
+.card-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 100px;
+    opacity: 0.7;
+}
+
+.card-title {
+    font-size: 20px;
+    opacity: 0.85;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.card-buttons svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.card-buttons svg:hover {
+    color: green;
+}
